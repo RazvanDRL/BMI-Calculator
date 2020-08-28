@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cmath>
+#include <Windows.h>
 using namespace std;
 
 int main() 
 {
+  SetConsoleTitle ("BMI Calculator");
   double a, w, h, r;
   cout << "This program estimates you body mass index(BMI).\nChoose a language.\n\n〔1〕English\n〔2〕Romanian\n\n";
   cin >> a;
