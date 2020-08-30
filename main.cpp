@@ -5,9 +5,10 @@ using namespace std;
 
 int main() 
 {
-  SetConsoleTitle ("BMI Calculator");
+  system("COLOR 1");
+  SetConsoleTitle("BMI Calculator");
   double a, w, h, r;
-  cout << "This program estimates you body mass index(BMI).\nChoose a language.\n\n〔1〕English\n〔2〕Romanian\n\n";
+  cout << "This program estimates you body mass index(BMI).\nChoose a language.\n\n[ 1 ] English\n[ 2 ] Romanian\n\n";
   cin >> a;
   
   
@@ -31,7 +32,7 @@ int main()
           cout << "Mild Thinness\n";
       } else if (r >= 18.5 && r < 25)
       {
-          cout << "Normal\n";
+          cout << "Normal\nCongratulations! According to your measurements, you fit into the category of people who have a normal weight.\n";
       } else if (r >= 25 && r < 30)
       {
           cout << "Overweight\n";
@@ -89,5 +90,6 @@ int main()
   {
       cout << "Please restart the program and choose a language.\n";
   }
+    system("PAUSE");
     return 0;
 }
